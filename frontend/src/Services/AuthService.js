@@ -11,7 +11,7 @@ export const LoginUserService = async (email, password) => {
             password:  password
         };
 
-        const response = await fetch(`${baseUrl}/login`, {
+        const response = await fetch(`${baseUrl}/auth/login`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
