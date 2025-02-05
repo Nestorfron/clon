@@ -1,6 +1,6 @@
 
 
-export const baseUrl = import.meta.env.REACT_APP_SV_HOST;
+export const baseUrl = process.env.REACT_APP_SV_HOST
 
 
 export const endpointsUrls = {
