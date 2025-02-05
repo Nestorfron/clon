@@ -1,3 +1,4 @@
+import { baseUrl, endpointsUrls } from "../constants"
 
 
 export const jobApplicationService = () =>{
@@ -6,7 +7,7 @@ export const jobApplicationService = () =>{
     const postjobApplication = async (formData) =>{
 
         
-        const response = await fetch("http://localhost:3001/api/jobApplications", {
+        const response = await fetch(`${baseUrl}+"/jobApplications"`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
@@ -24,7 +25,7 @@ export const jobApplicationService = () =>{
         try{
     
     
-            const response = await fetch("http://localhost:3001/api/jobApplications", {
+            const response = await fetch(`${baseUrl}+"/jobApplications"`, {
                 method: "GET",
                 headers: {
                     'Content-Type': 'application/json'

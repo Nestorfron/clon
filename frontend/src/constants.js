@@ -1,6 +1,6 @@
 
 
-export const baseUrl = "http://localhost:3001/api"
+export const baseUrl = import.meta.env.REACT_APP_SV_HOST;
 
 
 export const endpointsUrls = {

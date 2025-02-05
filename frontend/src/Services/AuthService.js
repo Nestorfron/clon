@@ -1,3 +1,6 @@
+import { baseUrl } from "../constants"
+
+
 export const LoginUserService = async (email, password) => {
     try {
         //PREGUNTAR COMO SE HACE
@@ -8,7 +11,7 @@ export const LoginUserService = async (email, password) => {
             password:  password
         };
 
-        const response = await fetch("http://localhost:3001/api/auth/login", {
+        const response = await fetch(`${baseUrl}/login`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
